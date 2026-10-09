@@ -1,0 +1,69 @@
+.toolbar {
+  padding: 0 40px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 16px;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+}
+
+.stat {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+}
+.stat span {
+  color: var(--text-secondary);
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+}
+
+.search-bar, .filter-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon, .filter-icon {
+  position: absolute;
+  left: 12px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.search-bar input, .filter-dropdown select {
+  padding: 10px 14px 10px 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.search-bar input:focus, .filter-dropdown select:focus { 
+  border-color: var(--accent-primary); 
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.search-bar input::placeholder {
+  color: var(--text-secondary);
+}

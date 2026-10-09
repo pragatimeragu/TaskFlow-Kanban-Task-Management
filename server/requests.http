@@ -1,0 +1,24 @@
+### 1. Get all tasks
+GET http://localhost:5000/api/tasks
+
+### 2. Create a new task
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Build the MERN Kanban App",
+  "description": "Follow the step-by-step guide to build a resume-worthy project.",
+  "priority": "High",
+  "status": "In Progress"
+}
+
+### 3. Update a task (Replace :id with an actual ID from step 1 or 2)
+PUT http://localhost:5000/api/tasks/:id
+Content-Type: application/json
+
+{
+  "status": "Done"
+}
+
+### 4. Delete a task (Replace :id with an actual ID)
+DELETE http://localhost:5000/api/tasks/:id
